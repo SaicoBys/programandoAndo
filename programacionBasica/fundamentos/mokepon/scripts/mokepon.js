@@ -1,7 +1,22 @@
-function seleccionarMascotaJugador() {
-    alert('seleccionarMascotaJugador')
+function iniciarJuego() {
+    let botonMascotaJugador = document.getElementById("boton-mascota");
+    botonMascotaJugador.addEventListener("click", seleccionarMascotaJugador);
 }
 
-let botonMascotaJugador = document.getElementById('boton-mascota')
+function seleccionarMascotaJugador() {
+    let inputHipodoge = document.getElementById('Hipodoge')
+    let inputCapipepo = document.getElementById('Capipepo')
+    let inputRatigueya = document.getElementById('Ratigueya')
 
-botonMascotaJugador.addEventListener('click', seleccionarMascotaJugador)
+    if (inputHipodoge.checked){
+        alert('Seleccionaste a Hipodoge')
+    }
+else if (inputCapipepo.checked) {
+        alert('Seleccionaste a Capipepo')
+    }else if (inputRatigueya.checked) {
+        alert('Seleccionaste a Ratigueya')
+    }
+
+}
+
+window.addEventListener("load", iniciarJuego)
