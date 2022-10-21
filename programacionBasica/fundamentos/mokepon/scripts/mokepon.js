@@ -67,7 +67,7 @@ function ataqueTierra() {
 }
 
 function ataqueAleartorioEnemigo() {
-    let ataqueAleartorio = aleatorio
+    let ataqueAleartorio = aleatorio(1,3)
 
     if (ataqueAleartorio == 1) {
         ataqueEnemigo = 'FUEGO'
